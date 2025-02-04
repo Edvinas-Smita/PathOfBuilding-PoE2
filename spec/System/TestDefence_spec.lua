@@ -102,7 +102,7 @@ describe("TestDefence", function()
 		assert.are.equals(3000, build.calcsTab.calcsOutput.ColdMaximumHitTaken)
 		assert.are.equals(3000, build.calcsTab.calcsOutput.LightningMaximumHitTaken)
 		assert.are.equals(3000, build.calcsTab.calcsOutput.ChaosMaximumHitTaken)
-		local poolsRemaining = poolsRemainingAfterTypeMaxHit("Lightning")
+		local poolsRemaining = poolsRemainingAfterTypeMaxHit("Lightning", 0.8)
 		assert.are.equals(0, floor(poolsRemaining.Life))
 		assert.are.equals(0, floor(poolsRemaining.OverkillDamage))
 
